@@ -1,0 +1,249 @@
+/* Modern and Sleek Styles with Dark Mode */
+
+:root {
+  --primary-color: #007bff;
+  --primary-color-dark: #0056b3;
+  --secondary-color: #6c757d;
+  --border-color: #dee2e6;
+
+  /* Light Mode Colors */
+  --body-bg-light: #f8f9fa;
+  --container-bg-light: #ffffff;
+  --text-color-light-mode-dark: #343a40;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  background-color: var(--body-bg-light);
+  color: var(--text-color-light-mode-dark);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--container-bg-light);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background: var(--primary-color);
+  color: #ffffff;
+  padding: 30px 0;
+  margin-bottom: 30px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--light-gray);
+}
+
+#module-selection {
+  margin-bottom: 30px;
+}
+
+#module-selection h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.module-card {
+  background: var(--container-bg-light);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.module-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  background-color: #e9ecef;
+}
+
+.module-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.hidden {
+  display: none;
+}
+
+#quiz-container {
+  margin-bottom: 30px;
+}
+
+.question {
+  background: var(--body-bg-light);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease;
+}
+
+.question h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.answer-option {
+  margin: 10px 0;
+}
+
+.answer-option label {
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.answer-option label:hover {
+  background-color: #f0f0f0;
+}
+
+.answer-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+#submit-quiz {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#submit-quiz:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.get-hint {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.get-hint:hover {
+  background-color: #5a6268;
+}
+
+.hint-display {
+  background-color: #e9ecef;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  font-size: 0.95em;
+  color: #495057;
+  transition: background-color 0.3s ease;
+}
+
+#results-section {
+  background-color: var(--container-bg-light);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+#results-section h2 {
+  margin-bottom: 20px;
+}
+
+#results-section p {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  color: var(--secondary-color);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --body-bg-light: #121212;
+  --container-bg-light: #1e1e1e;
+  --text-color-light-mode-dark: #ffffff;
+}
+
+body.dark-mode .container {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .module-card:hover {
+  background-color: #333;
+}
+
+body.dark-mode .question {
+  background-color: #333;
+  border-color: #555;
+}
+
+body.dark-mode .answer-option label {
+  border-color: #555;
+  color: #eee;
+}
+
+body.dark-mode .answer-option label:hover {
+  background-color: #444;
+}
+
+body.dark-mode .hint-display {
+  background-color: #444;
+  border-color: #555;
+  color: #ccc;
+}
+
+body.dark-mode #results-section {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}

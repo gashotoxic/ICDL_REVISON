@@ -1,0 +1,56 @@
+Act as an app developer and create a web-based application for students to revise and interact with using a free LLM model accessed through OpenRouter, Groq API, or Google API.
+The app should focus on the ICDL Course, which includes six modules: Computer Essentials, Online Essentials, IT Security, Documents, Presentations, and Spreadsheets.
+Users should have the option to either ask questions about the selected module or answer questions. 
+The app will provide a set of 100 random questions from the chosen module and grade the answers out of 100%. 
+This functionality should be available after users log in or create an account to track their progress. 
+Ensure that the app is easy to navigate, provides clear answers, offers hints for possible answers, and allows users to review both correct and incorrect answers.
+The interface should be user-friendly and sleek.
+
+=======================================================================
+Project Title: GT ICDL Revision App
+
+Function Description:
+The GT ICDL Revision App is a state-of-the-art web-based application developed specifically for students undertaking the ICDL course. With six modules including Computer Essentials, Online Essentials, IT Security, Documents, Presentations, and Spreadsheets, the application will aid students to revise interactively and have absolute confidence in their understandings of the various modules.
+
+Main Features:
+
+1. User account: User registration and authentication. It enables users to track their progress overtime and maintain personalized revision records.
+
+2. Six learning modules: Each module represents a different part of the ICDL Course. Users can select any they wish to revise or learn about.
+
+3. Interactive Quizzes: After choosing a module, the user is provided with a set of 100 random interactive questions for revision purposes that changes every time the module is selected.
+
+4. Grading System: Student’s responses are graded out of 100%. This provides immediate feedback on the level of understanding of the chosen topic.
+
+5. Q&A: Users have the option to ask questions about the selected module or answer questions, increasing the interaction within the application.
+
+6. Review System: Allows users to review both correct and incorrect answers for a better understanding of the topics.
+
+7. Hint System: The app offers hints for possible answers to help guide the users towards the correct answer.
+
+8. App Interface: Utilizes a clean and sleek design to offer a user-friendly and easy-to-navigate interface.
+
+Technologies:
+
+This application would utilize:
+
+1. OpenRouter for free and open-source routing software.
+
+2. Groq API or Google API for integrating various app functionalities such as Q&A, grading, and user authentication.
+
+3. LLM model for predictive typing and other app functionalities.
+
+Security Measures:
+
+To ensure secured interaction, this application will implement industry-standard encryption for data during transit and at rest. It will also include user authentication to validate user sign-ins and protect user data.
+
+Development Timeline: 
+
+The development timeline for this application is divided into 4 main phases:
+
+1. Planning & Design: 1 month
+2. Development & Integration: 3 months
+3. Testing & Bug Fixing: 1 month
+4. Launch & Post-Launch Maintenance: Ongoing
+
+Our goal is to create an interactive, highly functional, and efficient app that simplifies the ICDL Course revision process and makes it enjoyable for students.
